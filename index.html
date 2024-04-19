@@ -1,82 +1,134 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
- <meta charset="UTF-8">
-<title>Proyecto de programacion </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de programación</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .section-container {
+            margin-bottom: 20px;
+            color: black; /* Cambia el color del texto a negro */
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-<body> 
-¡Descubre lo último de Mora la fruta infiel, solo aquí en Upmf-Music!
- 🌟 Sumérgete en el universo único de Mora con su más reciente lanzamiento. 
-Con ritmos cautivadores y letras profundas,
- su nueva música promete llevarte a un viaje emocional que no querrás perderte.
+<body>
 
-<audio controls>
+<video id="video-background" autoplay loop muted>
+    <source src="12.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+</video>
+
+<!-- Botones para mostrar/ocultar secciones -->
+<button onclick="toggleSection('mora')">Mora</button>
+<button onclick="toggleSection('natanael-cano')">Natanael Cano</button>
+<button onclick="toggleSection('the-neighbourhood')">The Neighbourhood</button>
+<button onclick="toggleSection('morat')">Morat</button>
+<button onclick="toggleSection('besame-remix')">Bésame Remix</button>
+<button onclick="toggleSection('rels-b')">Rels B</button>
+<button onclick="toggleSection('saiko')">Saiko</button>
+
+<!-- Secciones de los artistas -->
+<section id="mora" class="section-container" style="display: none;">
+    <h1>Mora</h1>
+    <p>¡Descubre lo último de Mora la fruta infiel, solo aquí en Upmf-Music! 🌟 Sumérgete en el universo único de Mora con su más reciente lanzamiento. Con ritmos cautivadores y letras profundas, su nueva música promete llevarte a un viaje emocional que no querrás perderte.</p>
+    <img src="mora.jpg">
+    <audio controls>
         <source src="Mora - TUYO  PRIMER DIA DE CLASES.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
-<img src="mora.jpg">
+</section>
 
-¡Lo último de Natanael Cano, el rey de los Corridos Tumbados, solo aquí en Upmf-Music!
-🎤👑 Vive la revolución musical con los nuevos éxitos de Natanael Cano
- que están marcando un antes y un después en el género regional mexicano.
-
-<audio controls>
+<section id="natanael-cano" class="section-container" style="display: none;">
+    <h1>Natanael Cano</h1>
+    <p>¡Lo último de Natanael Cano, el rey de los Corridos Tumbados, solo aquí en Upmf-Music! 🎤👑 Vive la revolución musical con los nuevos éxitos de Natanael Cano que están marcando un antes y un después en el género regional mexicano.</p>
+    <img src="natanael.jpg">
+    <audio controls>
         <source src="Natanael Cano X Oscar Maydon - Madonna  [Official Video].mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
-<img src="natanael.jpg">
+</section>
 
-             "The Neighbourhood", banda estadounidense formada en 2011 en California. Su estilo musical abarca el rock alternativo, el indie pop y el R&B, y se caracterizan por sus letras melancólicas y su estética distintiva.
+<section id="the-neighbourhood" class="section-container" style="display: none;">
+    <h1>The Neighbourhood</h1>
+    <p>""The Neighbourhood", banda estadounidense formada en 2011 en California. Su estilo musical abarca el rock alternativo, el indie pop y el R&B, y se caracterizan por sus letras melancólicas y su estética distintiva.
 "The Neighbourhood" ha ganado popularidad con canciones como "Sweater Weather", "Daddy Issues", "R.I.P. 2 My Youth", entre otras. 
 Su música a menudo presenta una combinación única de sonidos atmosféricos, sintetizadores y letras introspectivas.
-Si te gustan bandas con un enfoque artístico y ecléctico, definitivamente deberías darle una escucha a "The Neighbourhood"
-<audio controls>
+Si te gustan bandas con un enfoque artístico y ecléctico, definitivamente deberías darle una escucha a "The Neighbourhood"</p>
+    <img src="Nbhd.jpg">
+    <audio controls>
         <source src="The Neighbourhood - Baby Came Home 2  Valentines (Lyrics)  dont just sit in front of me.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
- <img src="Nbhd.jpg">
- Morat es una banda colombiana de pop y folk que destaca por sus melodías pegajosas y letras emotivas. 
+</section>
+
+<section id="morat" class="section-container" style="display: none;">
+    <h1>Morat</h1>
+    <p>Morat es una banda colombiana de pop y folk que destaca por sus melodías pegajosas y letras emotivas. 
  Con éxitos como "Cómo Te Atreves" y "Besos En Guerra", su música combina influencias tradicionales con un toque moderno. 
  Ideal para quienes buscan ritmos alegres y canciones que llegan al corazón. 
  ¡Dales una escucha y prepárate para añadir algunas de sus canciones a tus favoritas!
+</p>
+    <img src="morat.jpeg">
+    <audio controls>
+        <source src="morat.mp3" type="audio/mp3">
+    </audio>
+</section>
 
-
- 
- <audio controls>
- <source src="morat.mp3" type="audio/mp3">
-  </audio>
- <img src="morat.jpeg">
-
- 
-¡Prepárate para sumergirte en lo más vibrante de la escena urbana argentina con el remix de "Bésame"!
+<section id="besame-remix" class="section-container" style="display: none;">
+    <h1>Bésame Remix</h1>
+    <p>¡Prepárate para sumergirte en lo más vibrante de la escena urbana argentina con el remix de "Bésame"!
  Este tema reúne a algunos de los nombres más resonantes del trap y reggaetón argentino: Thiago PZK, Bhavi, Neo Pistéa, y Khea.
  Cada uno de estos artistas aporta su estilo único y una energía contagiosa, creando una colaboración explosiva.
 
 "Bésame" es un tema que combina ritmos intensos con letras seductoras, ideal para quienes disfrutan de música con beats urbanos y un toque de romance. 
  La producción es pulida, y la mezcla de voces de estos talentosos artistas argentinos garantiza que no podrás dejar de escucharla.
 Si estás buscando algo fresco para actualizar tu playlist y darle sabor a tus días con sonidos directamente desde el corazón del trap y reggaetón latinoamericano, 
- "Bésame Remix" es una elección perfecta. ¡Dale play y deja que el ritmo te lleve!
+ "Bésame Remix" es una elección perfecta. ¡Dale play y deja que el ritmo te lleve!</p>
+    <img src="remix.jpg">
+    <audio controls>
+        <source src="remix.mp3" type="audio/mp3">
+    </audio>
+</section>
 
- 
- <audio controls>
-  <source src="remix.mp3" type="audio/mp3">
- </audio>
- <img src="remix.jpg">
-
- Rels B, también conocido como Skinny Flakk, es un destacado artista de la escena urbana española que ha ganado reconocimiento por su estilo único y sus letras sinceras. 
+<section id="rels-b" class="section-container" style="display: none;">
+    <h1>Rels B</h1>
+    <p> Rels B, también conocido como Skinny Flakk, es un destacado artista de la escena urbana española que ha ganado reconocimiento por su estilo único y sus letras sinceras. 
  Su música mezcla elementos de hip-hop, R&B y soul, creando un sonido distintivo que captura la atención de una audiencia internacional.
 "Shorty Q Te Vaya Bnn" es uno de los temas más pegajosos de Rels B.
  En esta canción, Rels ofrece un ritmo suave combinado con letras que exploran temas de relaciones y desamor, todo presentado con su característico estilo relajado y carismático.
  La canción es un excelente ejemplo de su habilidad para crear música que es tanto reflexiva como entretenida.
 Si te gusta la música con beats relajantes y letras que te hacen pensar, "Shorty Q Te Vaya Bnn" de Rels B es una elección perfecta. 
  Te invito a darle una escucha: podría convertirse en tu nueva canción favorita para esos momentos de relax. ¡Disfrútala y deja que el estilo único de Rels B te envuelva!
+.</p>
+    <img src="relsb.jpg">
+    <audio controls>
+        <source src="relsb.mp3" type="audio/mp3">
+    </audio>
+</section>
 
- 
- <audio controls>
-  <source src="relsb.mp3" type="audio/mp3">
- </audio>
- <img src="relsb.jpg">
-
- Saiko es un talentoso cantante y compositor chileno conocido por su estilo único y emotivo.
+<section id="saiko" class="section-container" style="display: none;">
+    <h1>Saiko</h1>
+    <p>Saiko es un talentoso cantante y compositor chileno conocido por su estilo único y emotivo.
  Su música abarca géneros como el pop y el rock alternativo, y se destaca por letras profundas y melodías envolventes que llegan al corazón de los oyentes.
 "Cosas que nunca te dije" es una de las canciones más emblemáticas de Saiko. 
  En esta canción, Saiko nos lleva en un viaje emocional mientras explora temas de amor, arrepentimiento y la lucha por la comunicación en las relaciones.
@@ -84,12 +136,23 @@ Si te gusta la música con beats relajantes y letras que te hacen pensar, "Short
 Ahora, Saiko está promocionando el remix de "Polaris", una colaboración que promete llevar su música a nuevas alturas.
  Con este remix, Saiko continúa cautivando a su audiencia con su talento excepcional y su capacidad para reinventarse.
 Si buscas música que te haga reflexionar y te lleve en un viaje emocional, "Cosas que nunca te dije" de Saiko es una excelente opción. 
- Y no te pierdas el remix de "Polaris", ¡una oportunidad para descubrir una nueva dimensión de su arte! ¡Dale una oportunidad y deja que la música de Saiko te envuelva en su magia!
+ Y no te pierdas el remix de "Polaris", ¡una oportunidad para descubrir una nueva dimensión de su arte! ¡Dale una oportunidad y deja que la música de Saiko te envuelva en su magia!.</p>
+    <img src="saiko.jpg">
+    <audio controls>
+        <source src="saiko.mp3" type="audio/mp3">
+    </audio>
+</section>
 
- 
- <audio controls>
-  <source src="saiko.mp3" type="audio/mp3">
- </audio>
- <img src="saiko.jpg">
+<script>
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+</script>
+
 </body>
 </html>
