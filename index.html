@@ -48,6 +48,8 @@
 <button onclick="toggleSection('saiko')">Saiko</button>
     <button onclick="toggleSection('WOS')">WOS</button>
     <button onclick="toggleSection('MORAD')">MORAD</button>
+    <button onclick="toggleSection('CHASE-ATLANTIC')">CHASE ATLANTIC</button>
+
 
 <!-- Secciones de los artistas -->
 <section id="mora" class="section-container" style="display: none;">
@@ -185,9 +187,21 @@ Si te gusta el rap que combina ritmos modernos con letras que cuentan historias 
         <source src="morad.mp3" type="audio/mp3">
     </audio>     
 </section>
-
+<section id="CHASE-ATLANTIC" class="section-container" style="display: none;">
+      <h1>CHASE ATLANTIC</h1>
+    <p>Chase Atlantic es una banda australiana de géneros alternativos que fusiona elementos de pop, rock, R&B y electrónica en su música. La canción de la que hablas es "Don't Run" y es conocida por su atmósfera envolvente y letras emotivas.
+En la parte que mencionas, "She said, 'Careful, or you'll lose it / But girl, I'm only human'", la letra parece reflejar una conversación entre dos personas donde una advierte sobre los riesgos de una situación, pero la otra reconoce su propia humanidad y las limitaciones que conlleva. Esta parte sugiere que la persona se siente vulnerable pero también consciente de su propia capacidad para enfrentar desafíos.
+La siguiente línea, "And I know there's a blade where your heart is / And you know how to use it", podría interpretarse como una metáfora de la capacidad de la otra persona para herir emocionalmente, y cómo la persona que canta es consciente de esto.
+La frase "And you can take my flesh if you want, girl / But baby, don't abuse it" sugiere una disposición a sacrificarse o ser vulnerable por amor, pero también establece límites claros sobre lo que está dispuesto a tolerar en una relación.
+La sección continúa con referencias a la lucha interna y la ansiedad, sugiriendo que la persona se enfrenta a voces internas que le instan a huir de la situación, pero al mismo tiempo está luchando por mantenerse firme y enfrentar sus miedos.
+En general, la letra de "Don't Run" parece explorar temas de vulnerabilidad, amor y lucha interna, transmitiendo una sensación de intensidad emocional y conflicto interno.</p>
+   <img src="igs.jpg">
+    <audio controls>
+        <source src="igs.mp3" type="audio/mp3">
+    </audio>     
+</section>
     
-<script>
+    <script>
     function toggleSection(sectionId) {
         var section = document.getElementById(sectionId);
         if (section.style.display === "none") {
